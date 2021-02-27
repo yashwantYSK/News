@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="#e7e4e2"
+    app:cardCornerRadius="10dp"
+    >
+
+    <TextView
+        android:id="@+id/newstitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="TextView"
+
+        />
+
+    <ImageView
+        android:id="@+id/newsimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/newsdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:text="TextView" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/newspubli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/newsdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/fab"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:layout_weight="-1"
+                android:clickable="true"
+                android:src="@drawable/white"
+                android:textColor="@color/black"
+                android:text="" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
